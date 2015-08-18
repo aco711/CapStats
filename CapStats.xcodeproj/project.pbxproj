@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3DB76D1B81841000D6FC0C /* StartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3DB76C1B81841000D6FC0C /* StartScreen.m */; };
+		2A436B311B821676007A0A03 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A436B301B821676007A0A03 /* GameViewController.m */; };
 		2A4DA1EF1B81404400B17B56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA1EE1B81404400B17B56 /* main.m */; };
 		2A4DA1F21B81404400B17B56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA1F11B81404400B17B56 /* AppDelegate.m */; };
 		2A4DA1F51B81404400B17B56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA1F41B81404400B17B56 /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		2A4DA1FA1B81404400B17B56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DA1F91B81404400B17B56 /* Images.xcassets */; };
 		2A4DA1FD1B81404400B17B56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DA1FB1B81404400B17B56 /* LaunchScreen.xib */; };
 		2A4DA2091B81404500B17B56 /* CapStatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA2081B81404500B17B56 /* CapStatsTests.m */; };
+		2A4DA2141B8146ED00B17B56 /* CapsGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA2131B8146ED00B17B56 /* CapsGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A3DB76B1B81841000D6FC0C /* StartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScreen.h; sourceTree = "<group>"; };
+		2A3DB76C1B81841000D6FC0C /* StartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScreen.m; sourceTree = "<group>"; };
+		2A436B2F1B821676007A0A03 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		2A436B301B821676007A0A03 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		2A4DA1E91B81404400B17B56 /* CapStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4DA1ED1B81404400B17B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4DA1EE1B81404400B17B56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,8 @@
 		2A4DA2021B81404500B17B56 /* CapStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapStatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4DA2071B81404500B17B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4DA2081B81404500B17B56 /* CapStatsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapStatsTests.m; sourceTree = "<group>"; };
+		2A4DA2121B8146ED00B17B56 /* CapsGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapsGame.h; sourceTree = "<group>"; };
+		2A4DA2131B8146ED00B17B56 /* CapsGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapsGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +90,15 @@
 		2A4DA1EB1B81404400B17B56 /* CapStats */ = {
 			isa = PBXGroup;
 			children = (
-				2A4DA1F01B81404400B17B56 /* AppDelegate.h */,
-				2A4DA1F11B81404400B17B56 /* AppDelegate.m */,
 				2A4DA1F31B81404400B17B56 /* ViewController.h */,
 				2A4DA1F41B81404400B17B56 /* ViewController.m */,
+				2A436B2F1B821676007A0A03 /* GameViewController.h */,
+				2A436B301B821676007A0A03 /* GameViewController.m */,
 				2A4DA1F61B81404400B17B56 /* Main.storyboard */,
+				2A3DB76B1B81841000D6FC0C /* StartScreen.h */,
+				2A3DB76C1B81841000D6FC0C /* StartScreen.m */,
+				2A4DA2121B8146ED00B17B56 /* CapsGame.h */,
+				2A4DA2131B8146ED00B17B56 /* CapsGame.m */,
 				2A4DA1F91B81404400B17B56 /* Images.xcassets */,
 				2A4DA1FB1B81404400B17B56 /* LaunchScreen.xib */,
 				2A4DA1EC1B81404400B17B56 /* Supporting Files */,
@@ -96,6 +109,8 @@
 		2A4DA1EC1B81404400B17B56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A4DA1F01B81404400B17B56 /* AppDelegate.h */,
+				2A4DA1F11B81404400B17B56 /* AppDelegate.m */,
 				2A4DA1ED1B81404400B17B56 /* Info.plist */,
 				2A4DA1EE1B81404400B17B56 /* main.m */,
 			);
@@ -220,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A4DA1F51B81404400B17B56 /* ViewController.m in Sources */,
+				2A3DB76D1B81841000D6FC0C /* StartScreen.m in Sources */,
 				2A4DA1F21B81404400B17B56 /* AppDelegate.m in Sources */,
+				2A4DA2141B8146ED00B17B56 /* CapsGame.m in Sources */,
+				2A436B311B821676007A0A03 /* GameViewController.m in Sources */,
 				2A4DA1EF1B81404400B17B56 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +434,7 @@
 				2A4DA20E1B81404500B17B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A4DA20F1B81404500B17B56 /* Build configuration list for PBXNativeTarget "CapStatsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				2A4DA2111B81404500B17B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

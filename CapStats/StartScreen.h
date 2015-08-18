@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StartScreen.h
 //  CapStats
 //
 //  Created by Alex Cohen on 8/16/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ViewController : UIViewController
-
--(void)presentNewGame;
+@interface StartScreen : UIView
 
 @end
-
