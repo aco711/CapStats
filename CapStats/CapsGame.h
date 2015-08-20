@@ -10,6 +10,8 @@
 
 @interface CapsGame : NSObject
 
+@property (nonatomic) NSInteger gameNumber;
+
 
 -(NSUInteger)numberOfHits;
 -(NSUInteger)numberOfRegularMisses;
@@ -23,5 +25,7 @@
 -(void)makeShot;
 -(void)missRegular;
 -(void)missGlass;
+-(void)redoShot;
+-(void)endGame;
 
 @end

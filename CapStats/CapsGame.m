@@ -12,6 +12,7 @@
 @property (nonatomic) NSUInteger regularMisses;
 @property (nonatomic) NSUInteger glassMisses;
 @property (nonatomic) NSUInteger shotsTaken;
+@property (strong, nonatomic) NSMutableArray* history;
 
 
 @end
@@ -27,8 +28,17 @@
         self.regularMisses = 0;
         self.glassMisses = 0;
         self.shotsTaken = 0;
+        self.gameNumber = 50;
     }
     return self;
+}
+-(NSMutableArray*)history
+{
+    if (!_history)
+    {
+        _history = [[NSMutableArray alloc] init];
+    }
+    return _history;
 }
 -(NSUInteger)numberOfHits
 {
@@ -79,16 +89,51 @@
 {
     self.shotsTaken++;
     self.hits++;
+    [self.history addObject:@"HIT"];
 }
 -(void)missRegular
 {
     self.shotsTaken++;
     self.regularMisses++;
+    [self.history addObject:@"MISS"];
 }
 -(void)missGlass
 {
     self.glassMisses++;
     self.regularMisses++;
     self.shotsTaken++;
+    [self.history addObject:@"GLASS"];
+}
+-(void)redoShot
+{
+    if ([[self.history lastObject] isEqualToString:@"HIT"])
+    {
+        self.hits--;
+        self.shotsTaken--;
+        [self.history removeLastObject];
+        
+    }
+    else if ([[self.history lastObject] isEqualToString:@"MISS"])
+    {
+        self.regularMisses--;
+        self.shotsTaken--;
+        [self.history removeLastObject];
+    }
+    else if ([[self.history lastObject] isEqualToString:@"GLASS"])
+    {
+        self.glassMisses--;
+        self.regularMisses--;
+        self.shotsTaken--;
+        [self.history removeLastObject];
+    }
+}
+-(void)endGame
+{
+    
+    self.hits = 0;
+    self.regularMisses = 0;
+    self.glassMisses = 0;
+    self.shotsTaken = 0;
+    self.history = nil;
 }
 @end

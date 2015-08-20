@@ -1,13 +1,14 @@
 //
-//  StartScreen.h
+//  GameStatsVC.h
 //  CapStats
 //
-//  Created by Alex Cohen on 8/16/15.
+//  Created by Alex Cohen on 8/19/15.
 //  Copyright (c) 2015 Alex Cohen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface StartScreen : UIView
+@interface GameStatsVC : UIViewController
+
 
 @end

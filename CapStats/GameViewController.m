@@ -8,8 +8,7 @@
 
 #import "GameViewController.h"
 #import "CapsGame.h"
-#import "StartScreen.h"
-
+#import "PastGamesTVC.h"
 @interface GameViewController ()
 
 @property (strong, nonatomic) CapsGame* game;
@@ -18,6 +17,7 @@
 @property (strong, nonatomic) UIButton* missButton;
 @property (strong, nonatomic) UIButton* glassMissButton;
 @property (strong, nonatomic) UIButton* endGameButton;
+@property (strong, nonatomic) UIButton* redoButton;
 
 @property (strong, nonatomic) UILabel* hitPercentage;
 @property (strong, nonatomic) UILabel* missPercentage;
@@ -33,6 +33,9 @@ static const int BUTTON_SIZE = 50;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+   // self.managedObjectContext = [[[UIApplication sharedApplication] delegate]]
+    
     // Do any additional setup after loading the view.
 }
 -(void)loadView
@@ -43,7 +46,7 @@ static const int BUTTON_SIZE = 50;
     [self makeMissButtonAndLabel];
     [self makeGlassButtonAndLabel];
     [self makeEndGameButton];
-    
+    [self makeRedoRect];
     
     
     
@@ -52,6 +55,8 @@ static const int BUTTON_SIZE = 50;
     
     self.view.backgroundColor = [UIColor whiteColor];
 }
+
+
 
 
 -(CapsGame*)game
@@ -76,6 +81,11 @@ static const int BUTTON_SIZE = 50;
 -(void)missRegular
 {
     [self.game missRegular];
+    [self updateUI];
+}
+-(void)redoShot
+{
+    [self.game redoShot];
     [self updateUI];
 }
 -(void)makeGlassButtonAndLabel
@@ -144,7 +154,7 @@ static const int BUTTON_SIZE = 50;
 }
 -(void)makeEndGameButton
 {
-    CGRect endGameRect = CGRectMake(self.view.bounds.size.width/2 - BUTTON_SIZE/2,
+    CGRect endGameRect = CGRectMake(self.view.bounds.size.width/2 - BUTTON_SIZE,
                                       self.view.bounds.size.height - 2 * MIDDLE_OFFSET,
                                       BUTTON_SIZE,
                                       BUTTON_SIZE);
@@ -153,7 +163,32 @@ static const int BUTTON_SIZE = 50;
     [self.endGameButton setTitle:@"End Game" forState:UIControlStateNormal];
     [self.endGameButton sizeToFit];
     self.endGameButton.backgroundColor = [UIColor blackColor];
+    [self.endGameButton addTarget:self action:@selector(endGame) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.endGameButton];
+}
+
+-(void)makeRedoRect
+{
+    CGRect redoRect = CGRectMake(self.view.bounds.size.width/2 + BUTTON_SIZE,
+                                    self.view.bounds.size.height - 2 * MIDDLE_OFFSET,
+                                    BUTTON_SIZE,
+                                    BUTTON_SIZE);
+    self.redoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.redoButton.frame = redoRect;
+    [self.redoButton setTitle:@"Redo" forState:UIControlStateNormal];
+    [self.redoButton sizeToFit];
+    self.redoButton.backgroundColor = [UIColor blackColor];
+    [self.redoButton addTarget:self action:@selector(redoShot) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.redoButton];
+}
+-(void)endGame
+{
+
+   // [self.game endGame];
+   // [self updateUI];
+    PastGamesTVC *historyTVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Table"];
+    historyTVC.title = @"History";
+    [self showViewController:historyTVC sender:self];
 }
 -(void)updateUI
 {
@@ -161,6 +196,7 @@ static const int BUTTON_SIZE = 50;
     self.missPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game missPercentage]];
     self.glassPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game glassPercentage]];
 }
+
 #pragma mark - Navigation
  /*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
