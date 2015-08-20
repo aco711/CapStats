@@ -89,7 +89,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
-            landmarkName = "-redoShot"
+            landmarkName = "-makeGlassButtonAndLabel"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -231,7 +231,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "-setManagedObjectContext:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
