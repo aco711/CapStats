@@ -7,8 +7,11 @@
 //
 
 #import "GameStatsVC.h"
+#import <Realm/Realm.h>
+#import "FinalGameStats.h"
 
 @interface GameStatsVC ()
+
 @property (strong, nonatomic) UITextView* textView;
 
 @end
@@ -22,6 +25,7 @@
     CGRect textViewRect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     self.textView = [[UITextView alloc] initWithFrame:textViewRect];
     self.textView.editable = NO;
+    self.textView.text = [NSString stringWithFormat:@"Hit Percentage: %.3f\nMiss Percentage: %.3f\nGlass Percentage: %.3f", self.finalGameStats.hitPercentage, self.finalGameStats.missPercentage, self.finalGameStats.glassPercentage];
     [self.view addSubview:self.textView];
     
 }

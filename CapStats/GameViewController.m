@@ -9,6 +9,9 @@
 #import "GameViewController.h"
 #import "CapsGame.h"
 #import "PastGamesTVC.h"
+#import <Realm/Realm.h>
+#import "FinalGameStats.h"
+
 @interface GameViewController ()
 
 @property (strong, nonatomic) CapsGame* game;
@@ -183,9 +186,29 @@ static const int BUTTON_SIZE = 50;
 }
 -(void)endGame
 {
+    
+    
+    RLMResults *allGames = [FinalGameStats allObjects];
+     RLMRealm * realm = [RLMRealm defaultRealm];
 
-   // [self.game endGame];
-   // [self updateUI];
+    FinalGameStats* finalGameStats = [[FinalGameStats alloc] init];
+    finalGameStats.regularMisses = self.game.numberOfRegularMisses;
+    finalGameStats.glassMisses = self.game.numberOfGlassMisses;
+    finalGameStats.numberOfHits = self.game.numberOfHits;
+    finalGameStats.missPercentage = self.game.missPercentage;
+    finalGameStats.glassPercentage = self.game.glassPercentage;
+    finalGameStats.hitPercentage = self.game.hitPercentage;
+    finalGameStats.gameNumber = [allGames count] +1;
+    
+   // return finalGameStats;
+   
+    
+    [realm beginWriteTransaction];
+    [realm addObject:finalGameStats];
+    [realm commitWriteTransaction];
+
+    [self.game endGame];
+    [self updateUI];
     PastGamesTVC *historyTVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Table"];
     historyTVC.title = @"History";
     [self showViewController:historyTVC sender:self];

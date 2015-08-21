@@ -46,20 +46,6 @@
 {
     [super loadView];
     
-//    CGRect topRect = CGRectMake(self.view.bounds.origin.x,
-//                                self.view.bounds.origin.y, self.view.bounds.size.width,
-//                                self.view.bounds.size.height/2);
-//    CGRect bottomRect = CGRectMake(self.view.bounds.origin.x,
-//                                   self.view.bounds.size.height/2,
-//                                   self.view.bounds.size.width, self.view.bounds.size.height/2);
-//    self.topView = [[UIView alloc] initWithFrame:topRect];
-//    self.topView.backgroundColor = [UIColor cyanColor];
-//    self.topView.alpha = -3;
-//    
-//    self.bottomView = [[UIView alloc]initWithFrame:bottomRect];
-//    self.bottomView.backgroundColor = [UIColor blueColor];
-//    [self.view addSubview:self.bottomView];
-//    [self.view addSubview:self.topView];
     
     self.view.backgroundColor = [UIColor cyanColor];
     self.view.alpha = .5;

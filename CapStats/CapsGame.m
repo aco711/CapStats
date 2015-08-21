@@ -8,10 +8,10 @@
 
 #import "CapsGame.h"
 @interface CapsGame()
-@property (nonatomic) NSUInteger hits;
-@property (nonatomic) NSUInteger regularMisses;
-@property (nonatomic) NSUInteger glassMisses;
-@property (nonatomic) NSUInteger shotsTaken;
+@property (nonatomic) NSInteger hits;
+@property (nonatomic) NSInteger regularMisses;
+@property (nonatomic) NSInteger glassMisses;
+@property (nonatomic) NSInteger shotsTaken;
 @property (strong, nonatomic) NSMutableArray* history;
 
 

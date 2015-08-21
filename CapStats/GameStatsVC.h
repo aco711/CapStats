@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Realm/Realm.h>
+#import "FinalGameStats.h"
 
 @interface GameStatsVC : UIViewController
 
+
+@property (strong, nonatomic) FinalGameStats * finalGameStats;
 
 @end

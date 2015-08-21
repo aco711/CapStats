@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3972561B86CD28008559D7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3972551B86CD28008559D7 /* Realm.framework */; };
+		2A3972581B86CD6D008559D7 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3972571B86CD6D008559D7 /* libc++.dylib */; };
 		2A436B311B821676007A0A03 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A436B301B821676007A0A03 /* GameViewController.m */; };
 		2A4DA1EF1B81404400B17B56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA1EE1B81404400B17B56 /* main.m */; };
 		2A4DA1F21B81404400B17B56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA1F11B81404400B17B56 /* AppDelegate.m */; };
@@ -18,6 +20,7 @@
 		2A9861CA1B8528F2002ACFB8 /* GameStatsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9861C91B8528F2002ACFB8 /* GameStatsVC.m */; };
 		2AB9D1181B8678C8003B215E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DA1F61B81404400B17B56 /* Main.storyboard */; };
 		2ABFB3C81B85070800A5DA59 /* PastGamesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFB3C71B85070800A5DA59 /* PastGamesTVC.m */; };
+		2ACC401A1B86CEA00095764E /* FinalGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC40191B86CEA00095764E /* FinalGameStats.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A3972551B86CD28008559D7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		2A3972571B86CD6D008559D7 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		2A436B2F1B821676007A0A03 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		2A436B301B821676007A0A03 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		2A4DA1E91B81404400B17B56 /* CapStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +57,8 @@
 		2A9861C91B8528F2002ACFB8 /* GameStatsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStatsVC.m; sourceTree = "<group>"; };
 		2ABFB3C61B85070800A5DA59 /* PastGamesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastGamesTVC.h; sourceTree = "<group>"; };
 		2ABFB3C71B85070800A5DA59 /* PastGamesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastGamesTVC.m; sourceTree = "<group>"; };
+		2ACC40181B86CEA00095764E /* FinalGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalGameStats.h; sourceTree = "<group>"; };
+		2ACC40191B86CEA00095764E /* FinalGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalGameStats.m; sourceTree = "<group>"; };
 		2AD9BDC31B865402006E62DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3972581B86CD6D008559D7 /* libc++.dylib in Frameworks */,
+				2A3972561B86CD28008559D7 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,8 @@
 		2A4DA1E01B81404400B17B56 = {
 			isa = PBXGroup;
 			children = (
+				2A3972571B86CD6D008559D7 /* libc++.dylib */,
+				2A3972551B86CD28008559D7 /* Realm.framework */,
 				2AD9BDC31B865402006E62DB /* CoreData.framework */,
 				2A4DA1EB1B81404400B17B56 /* CapStats */,
 				2A4DA2051B81404500B17B56 /* CapStatsTests */,
@@ -117,6 +128,8 @@
 				2A4DA1F91B81404400B17B56 /* Images.xcassets */,
 				2A4DA1FB1B81404400B17B56 /* LaunchScreen.xib */,
 				2A4DA1EC1B81404400B17B56 /* Supporting Files */,
+				2ACC40181B86CEA00095764E /* FinalGameStats.h */,
+				2ACC40191B86CEA00095764E /* FinalGameStats.m */,
 			);
 			path = CapStats;
 			sourceTree = "<group>";
@@ -255,6 +268,7 @@
 				2ABFB3C81B85070800A5DA59 /* PastGamesTVC.m in Sources */,
 				2A4DA2141B8146ED00B17B56 /* CapsGame.m in Sources */,
 				2A436B311B821676007A0A03 /* GameViewController.m in Sources */,
+				2ACC401A1B86CEA00095764E /* FinalGameStats.m in Sources */,
 				2A4DA1EF1B81404400B17B56 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +395,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/alexcohen/Downloads/realm-objc-0.94.1/ios/static",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CapStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +410,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/alexcohen/Downloads/realm-objc-0.94.1/ios/static",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CapStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

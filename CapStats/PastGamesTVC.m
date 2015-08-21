@@ -8,24 +8,11 @@
 
 #import "PastGamesTVC.h"
 #import "GameStatsVC.h"
+#import <Realm/Realm.h>
+#import "FinalGameStats.h"
 
 @implementation PastGamesTVC
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
@@ -38,18 +25,40 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 1;
+   // RLMRealm * realm = [RLMRealm defaultRealm];
+    RLMResults * allGames = [FinalGameStats allObjects];
+    return [allGames count];
 }
 
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Past Game Cell" forIndexPath:indexPath];
-     cell.textLabel.text = @"test";
+     
+     RLMResults * allGames = [FinalGameStats allObjects];
+     FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
+     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu", (unsigned long)objectAtIndexPath.gameNumber];
+     cell.detailTextLabel.text = [NSString stringWithFormat:@"Hit Percentage: %.2f", objectAtIndexPath.hitPercentage];
+     
+     
  
  // Configure the cell...
  
  return cell;
  }
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GameStatsVC * gsVC = [[GameStatsVC alloc] init];
+    RLMResults * allGames = [FinalGameStats allObjects];
+    FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
+    
+    gsVC.finalGameStats = objectAtIndexPath;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self showViewController:gsVC sender:self];
+    
+    
+    
+}
 
 /*
  // Override to support conditional editing of the table view.
