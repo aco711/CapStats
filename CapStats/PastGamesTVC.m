@@ -41,19 +41,16 @@
      
      
  
- // Configure the cell...
- 
  return cell;
  }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GameStatsVC * gsVC = [[GameStatsVC alloc] init];
     RLMResults * allGames = [FinalGameStats allObjects];
     FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
     
     gsVC.finalGameStats = objectAtIndexPath;
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self showViewController:gsVC sender:self];
     
     

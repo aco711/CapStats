@@ -157,14 +157,17 @@ static const int BUTTON_SIZE = 50;
 }
 -(void)makeEndGameButton
 {
-    CGRect endGameRect = CGRectMake(self.view.bounds.size.width/2 - BUTTON_SIZE,
+    CGRect endGameRect = CGRectMake(self.view.bounds.size.width/4 + BUTTON_SIZE/2,
                                       self.view.bounds.size.height - 2 * MIDDLE_OFFSET,
                                       BUTTON_SIZE,
                                       BUTTON_SIZE);
     self.endGameButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.endGameButton.frame = endGameRect;
     [self.endGameButton setTitle:@"End Game" forState:UIControlStateNormal];
-    [self.endGameButton sizeToFit];
+    self.endGameButton.titleLabel.numberOfLines = 2;
+    self.endGameButton.titleLabel.minimumScaleFactor = 8./self.endGameButton.titleLabel.font.pointSize;
+    self.endGameButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+    //[self.endGameButton sizeToFit];
     self.endGameButton.backgroundColor = [UIColor blackColor];
     [self.endGameButton addTarget:self action:@selector(endGame) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.endGameButton];
@@ -172,14 +175,17 @@ static const int BUTTON_SIZE = 50;
 
 -(void)makeRedoRect
 {
-    CGRect redoRect = CGRectMake(self.view.bounds.size.width/2 + BUTTON_SIZE,
+    CGRect redoRect = CGRectMake(3 * self.view.bounds.size.width/4 - 3 * BUTTON_SIZE/2,
                                     self.view.bounds.size.height - 2 * MIDDLE_OFFSET,
                                     BUTTON_SIZE,
                                     BUTTON_SIZE);
     self.redoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.redoButton.frame = redoRect;
     [self.redoButton setTitle:@"Redo" forState:UIControlStateNormal];
-    [self.redoButton sizeToFit];
+    self.redoButton.titleLabel.numberOfLines = 1;
+    self.redoButton.titleLabel.minimumScaleFactor = 8./self.redoButton.titleLabel.font.pointSize;
+    self.redoButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+   
     self.redoButton.backgroundColor = [UIColor blackColor];
     [self.redoButton addTarget:self action:@selector(redoShot) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.redoButton];
