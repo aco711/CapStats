@@ -22,7 +22,7 @@
 		<key>018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45</key>
 		<string>..</string>
 		<key>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</key>
-		<string>..CapStats/</string>
+		<string>..CapStats</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/aco711/CapStats.git</string>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CapStats</string>
+			<string>CapStatsCapStats</string>
 		</dict>
 	</array>
 </dict>

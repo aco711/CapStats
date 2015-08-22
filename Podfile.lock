@@ -1,10 +1,13 @@
 PODS:
   - DateTools (1.6.1)
+  - PureLayout (3.0.0)
 
 DEPENDENCIES:
   - DateTools
+  - PureLayout
 
 SPEC CHECKSUMS:
   DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
+  PureLayout: 270dfee2236f697ab1d5e2771c2e5c248495fa0d
 
 COCOAPODS: 0.38.2

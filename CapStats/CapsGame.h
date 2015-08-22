@@ -10,7 +10,6 @@
 
 @interface CapsGame : NSObject
 
-@property (nonatomic) NSInteger gameNumber;
 
 
 -(NSUInteger)numberOfHits;

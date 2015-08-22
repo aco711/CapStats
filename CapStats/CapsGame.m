@@ -28,7 +28,6 @@
         self.regularMisses = 0;
         self.glassMisses = 0;
         self.shotsTaken = 0;
-        self.gameNumber = 50;
     }
     return self;
 }
