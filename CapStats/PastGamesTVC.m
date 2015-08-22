@@ -13,7 +13,26 @@
 
 @implementation PastGamesTVC
 
+-(void)viewDidLoad
+{
+    UIBarButtonItem *editButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Edit"
+                                   style:UIBarButtonItemStylePlain
+                                   target:self
+                                   action:@selector(alterEditing)];
+    self.navigationItem.rightBarButtonItem = editButton;
+}
 
+
+-(void)alterEditing
+{
+    if (self.editing == YES) [self setEditing:NO animated:YES];
+    else
+    {
+        [self setEditing:YES animated:YES];
+    }
+    
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -65,17 +84,23 @@
  }
  */
 
-/*
+
  // Override to support editing the table view.
  - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
  if (editingStyle == UITableViewCellEditingStyleDelete) {
+     
  // Delete the row from the data source
+     RLMResults * allGames = [FinalGameStats allObjects];
+     RLMObject * finalGameStatsToDelete = [allGames objectAtIndex:indexPath.row];
+     RLMRealm * realm = [RLMRealm defaultRealm];
+     [realm beginWriteTransaction];
+     [realm deleteObject:finalGameStatsToDelete];
+     [realm commitWriteTransaction];
  [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
  } else if (editingStyle == UITableViewCellEditingStyleInsert) {
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
  }
  }
- */
 
 /*
  // Override to support rearranging the table view.

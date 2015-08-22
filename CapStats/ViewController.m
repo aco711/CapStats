@@ -45,7 +45,9 @@
 -(void)loadView
 {
     [super loadView];
-    
+    CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+    UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
+    self.view = contentView;
     
     self.view.backgroundColor = [UIColor cyanColor];
     self.view.alpha = .5;

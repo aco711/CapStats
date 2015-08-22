@@ -45,6 +45,12 @@ static const int BUTTON_SIZE = 50;
 {
     [super loadView];
     
+    CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+    UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
+    contentView.backgroundColor = [UIColor whiteColor];
+    self.view = contentView;
+
+    
     [self makeHitButtonAndLabel];
     [self makeMissButtonAndLabel];
     [self makeGlassButtonAndLabel];
@@ -55,8 +61,7 @@ static const int BUTTON_SIZE = 50;
     
     
 
-    
-    self.view.backgroundColor = [UIColor whiteColor];
+
 }
 
 

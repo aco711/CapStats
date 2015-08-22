@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F4CED09B-D494-49ED-BB55-64F043E061D1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>CapStats</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45</key>
@@ -16,13 +16,13 @@
 		<string>https://github.com/aco711/CapStats.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CapStats.xcodeproj/project.xcworkspace</string>
+	<string>CapStats.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45</key>
 		<string>../..</string>
 		<key>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</key>
-		<string>../..CapStats/</string>
+		<string>../..CapStats</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/aco711/CapStats.git</string>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CapStats</string>
+			<string>CapStatsCapStats</string>
 		</dict>
 	</array>
 </dict>
