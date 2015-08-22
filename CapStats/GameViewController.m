@@ -34,13 +34,6 @@
 static const int MIDDLE_OFFSET = 50;
 static const int BUTTON_SIZE = 50;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-   // self.managedObjectContext = [[[UIApplication sharedApplication] delegate]]
-    
-    // Do any additional setup after loading the view.
-}
 -(void)loadView
 {
     [super loadView];
@@ -48,6 +41,8 @@ static const int BUTTON_SIZE = 50;
     CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
     UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
     contentView.backgroundColor = [UIColor whiteColor];
+    contentView.alpha = 2.2;
+
     self.view = contentView;
 
     
@@ -56,6 +51,7 @@ static const int BUTTON_SIZE = 50;
     [self makeGlassButtonAndLabel];
     [self makeEndGameButton];
     [self makeRedoRect];
+    [self addConstraintsToButtons];
     
     
     
@@ -98,21 +94,14 @@ static const int BUTTON_SIZE = 50;
 }
 -(void)makeGlassButtonAndLabel
 {
-    CGRect glassButtonRect = CGRectMake( 3 * self.view.bounds.size.width/4 - BUTTON_SIZE/2,
-                                        self.view.bounds.size.height/2 + MIDDLE_OFFSET - BUTTON_SIZE/2,
-                                        BUTTON_SIZE, BUTTON_SIZE);
-    
     self.glassMissButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.glassMissButton.frame = glassButtonRect;
-    self.glassMissButton.backgroundColor = [UIColor blueColor];
+    self.glassMissButton.backgroundColor = [UIColor grayColor];
     [self.glassMissButton setTitle:@"GLASS" forState:UIControlStateNormal];
+    [self.glassMissButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
     [self.glassMissButton addTarget:self action:@selector(missGlass) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.glassMissButton];
     
-    CGRect glassLabelRect = CGRectMake(3 * self.view.bounds.size.width/4 - BUTTON_SIZE/2,
-                                        (self.view.bounds.size.height/2 + MIDDLE_OFFSET - BUTTON_SIZE/2)/2,
-                                       BUTTON_SIZE, BUTTON_SIZE);
-    self.glassPercentage = [[UILabel alloc] initWithFrame:glassLabelRect];
+    self.glassPercentage = [[UILabel alloc] init];
     self.glassPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game glassPercentage]];
     [self.glassPercentage sizeToFit];
     [self.view addSubview:self.glassPercentage];
@@ -120,42 +109,32 @@ static const int BUTTON_SIZE = 50;
 }
 -(void)makeMissButtonAndLabel
 {
-    CGRect missButtonRect = CGRectMake( self.view.bounds.size.width/2 - BUTTON_SIZE/2,
-                                       self.view.bounds.size.height/2 + MIDDLE_OFFSET - BUTTON_SIZE/2,
-                                       BUTTON_SIZE, BUTTON_SIZE);
+
     
     self.missButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.missButton.frame = missButtonRect;
     self.missButton.backgroundColor = [UIColor redColor];
     [self.missButton setTitle:@"MISS" forState:UIControlStateNormal];
+    [self.missButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
+
     [self.missButton addTarget:self action:@selector(missRegular) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.missButton];
     
-    CGRect missLabelRect = CGRectMake(self.view.bounds.size.width/2 - BUTTON_SIZE/2,
-                                       ((self.view.bounds.size.height/2 + MIDDLE_OFFSET - BUTTON_SIZE/2)/2),
-                                       BUTTON_SIZE, BUTTON_SIZE);
-    self.missPercentage = [[UILabel alloc] initWithFrame:missLabelRect];
+    self.missPercentage = [[UILabel alloc] init];
     self.missPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game missPercentage]];
     [self.missPercentage sizeToFit];
     [self.view addSubview:self.missPercentage];
 }
 -(void)makeHitButtonAndLabel
 {
-    CGRect hitButtonRect = CGRectMake(self.view.bounds.size.width/4 - BUTTON_SIZE/2,
-                                      self.view.bounds.size.height/2 + MIDDLE_OFFSET - BUTTON_SIZE/2,
-                                      BUTTON_SIZE,
-                                      BUTTON_SIZE);
     self.hitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.hitButton.frame = hitButtonRect;
     [self.hitButton setTitle:@"HIT" forState:UIControlStateNormal];
     self.hitButton.backgroundColor = [UIColor greenColor];
     [self.hitButton addTarget:self action:@selector(makeShot) forControlEvents:UIControlEventTouchUpInside];
+    [self.hitButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
+
     [self.view addSubview:self.hitButton];
     
-    CGRect hitLabelRect = CGRectMake(self.view.bounds.size.width/4 - BUTTON_SIZE/2,
-                                      ((self.view.bounds.size.height/2 + MIDDLE_OFFSET - BUTTON_SIZE/2)/2),
-                                      BUTTON_SIZE, BUTTON_SIZE);
-    self.hitPercentage = [[UILabel alloc] initWithFrame:hitLabelRect];
+    self.hitPercentage = [[UILabel alloc] init];
     self.hitPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game hitPercentage]];
     [self.hitPercentage sizeToFit];
     [self.view addSubview:self.hitPercentage];
@@ -230,6 +209,186 @@ static const int BUTTON_SIZE = 50;
     self.missPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game missPercentage]];
     self.glassPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game glassPercentage]];
 }
+-(void)addConstraintsToButtons
+{
+    [self.hitButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.missButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.glassMissButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.hitPercentage setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.missPercentage setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.glassPercentage setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.redoButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.endGameButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.missButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.glassMissButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitButton
+                                                          attribute:NSLayoutAttributeHeight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.missButton
+                                                          attribute:NSLayoutAttributeHeight
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missButton
+                                                          attribute:NSLayoutAttributeHeight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.glassMissButton
+                                                          attribute:NSLayoutAttributeHeight
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitButton
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.5
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missButton
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.5
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.glassMissButton
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.5
+                                                           constant:0.0]];
+    
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:.5
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.glassMissButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1.5
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitPercentage
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:.5
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missPercentage
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:.5
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.glassPercentage
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:.5
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitPercentage
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.hitButton                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.glassPercentage
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.glassMissButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missPercentage
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.missButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.redoButton
+                                                          attribute:NSLayoutAttributeLeftMargin
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeLeftMargin
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.endGameButton
+                                                          attribute:NSLayoutAttributeRightMargin                                                         relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeRightMargin
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.redoButton
+                                                          attribute:NSLayoutAttributeBottomMargin
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeBottomMargin
+                                                         multiplier:1
+                                                           constant:0 - 20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.endGameButton
+                                                          attribute:NSLayoutAttributeBottomMargin
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeBottomMargin
+                                                         multiplier:1
+                                                           constant:0 - 20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.redoButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.endGameButton
+                                                          attribute:NSLayoutAttributeWidth
+                                                         multiplier:1
+                                                           constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.endGameButton
+                                                          attribute:NSLayoutAttributeHeight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.redoButton
+                                                          attribute:NSLayoutAttributeHeight
+                                                         multiplier:1
+                                                           constant:0]];
+
+    
+
+   
+
+}
+
 
 #pragma mark - Navigation
  /*

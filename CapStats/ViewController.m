@@ -57,8 +57,6 @@
     [self.aNewGameButton addTarget:self action:@selector(presentNewGame) forControlEvents:UIControlEventTouchUpInside];
     [self.aNewGameButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.aNewGameButton sizeToFit];
-    self.aNewGameButton.frame = CGRectMake(self.view.bounds.size.width/2 - self.aNewGameButton.bounds.size.width/2,
-                                           4 * self.view.bounds.size.height/5, self.aNewGameButton.bounds.size.width, self.aNewGameButton.bounds.size.height);
     [self.view addSubview:self.aNewGameButton];
     
     
@@ -67,9 +65,11 @@
     [self.historyButton addTarget:self action:@selector(presentHistory) forControlEvents:UIControlEventTouchUpInside];
     [self.historyButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.historyButton sizeToFit];
-    self.historyButton.frame = CGRectMake(self.view.bounds.size.width/2 - self.aNewGameButton.bounds.size.width/2,
-                                           2 * self.view.bounds.size.height/5, self.aNewGameButton.bounds.size.width, self.aNewGameButton.bounds.size.height);
     [self.view addSubview:self.historyButton];
+    
+    [self addConstraintsToButtons];
+
+    
     
     
 }
@@ -81,6 +81,44 @@
         _game = [[CapsGame alloc] init];
     }
     return _game;
+}
+-(void)addConstraintsToButtons
+{
+    [self.aNewGameButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [self.historyButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.aNewGameButton
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.aNewGameButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:1.5
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.historyButton
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.0
+                                                           constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.historyButton
+                                                          attribute:NSLayoutAttributeCenterY
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterY
+                                                         multiplier:.5
+                                                           constant:0.0]];
 }
 
 

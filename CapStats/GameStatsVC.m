@@ -71,14 +71,14 @@
     
     
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitPercentageLabel
-                                                          attribute:(NSLayoutAttributeBottom)
+                                                          attribute:NSLayoutAttributeBottom
                                                           relatedBy:NSLayoutRelationEqual
                                                              toItem:self.missPercentageLabel
                                                           attribute:NSLayoutAttributeTop
                                                          multiplier:1
                                                            constant:0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missPercentageLabel
-                                                          attribute:(NSLayoutAttributeBottom)
+                                                          attribute:NSLayoutAttributeBottom
                                                           relatedBy:NSLayoutRelationEqual
                                                              toItem:self.glassPercentageLabel
                                                           attribute:NSLayoutAttributeTop
