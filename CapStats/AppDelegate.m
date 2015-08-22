@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Realm/Realm.h>
+#import "FinalGameStats.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+     [RLMRealm setSchemaVersion:1 forRealmAtPath:[RLMRealm defaultRealmPath] withMigrationBlock:^(RLMMigration *migration, uint64_t oldSchemaVersion)
+      {
+          if (oldSchemaVersion < 1)
+          {
+              [migration enumerateObjects:@"FinalGameStats" block:^(RLMObject *oldObject, RLMObject *newObject)
+               {
+                   newObject[@"date"] = [NSDate date];
+               }];
+              
+            };
+      }];
+
+      
+            
+            
     return YES;
 }
 

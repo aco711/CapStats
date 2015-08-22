@@ -25,6 +25,7 @@
 @property (strong, nonatomic) UILabel* hitPercentage;
 @property (strong, nonatomic) UILabel* missPercentage;
 @property (strong, nonatomic) UILabel* glassPercentage;
+@property (strong, nonatomic) NSString* date;
 
 
 @end
@@ -60,6 +61,21 @@ static const int BUTTON_SIZE = 50;
 
 }
 
+-(NSString*)date
+{
+    if (!_date)
+    {
+        _date = [[NSString alloc] init];
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+        
+        NSInteger day = [components day];
+        NSInteger week = [components month];
+        NSInteger year = [components year];
+        
+        _date = [NSString stringWithFormat:@"%ld.%ld.%ld", (long)day, (long)week, (long)year];
+    }
+    return _date;
+}
 
 
 
@@ -178,7 +194,6 @@ static const int BUTTON_SIZE = 50;
 {
     
     
-    RLMResults *allGames = [FinalGameStats allObjects];
      RLMRealm * realm = [RLMRealm defaultRealm];
 
     FinalGameStats* finalGameStats = [[FinalGameStats alloc] init];
@@ -188,7 +203,7 @@ static const int BUTTON_SIZE = 50;
     finalGameStats.missPercentage = self.game.missPercentage;
     finalGameStats.glassPercentage = self.game.glassPercentage;
     finalGameStats.hitPercentage = self.game.hitPercentage;
-    finalGameStats.gameNumber = [allGames count] +1;
+    finalGameStats.date = [NSDate date];
     
    // return finalGameStats;
    

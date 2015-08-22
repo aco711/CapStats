@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/ViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461957797.683247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142">
+            startingLineNumber = "144"
+            endingLineNumber = "144">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947706.009595"
+            timestampString = "461957037.612113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-makeGlassButtonAndLabel"
             landmarkType = "5">
          </BreakpointContent>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947706.009595"
+            timestampString = "461957037.612113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "-redoShot"
             landmarkType = "5">
          </BreakpointContent>
@@ -116,11 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461957037.612113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "-makeHitButtonAndLabel"
             landmarkType = "5">
          </BreakpointContent>
@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461957037.612113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "-makeEndGameButton"
             landmarkType = "5">
          </BreakpointContent>
@@ -210,11 +210,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/ViewController.m"
-            timestampString = "461790924.251174"
+            timestampString = "461957797.683247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "-presentHistory"
             landmarkType = "5">
          </BreakpointContent>
@@ -226,11 +226,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/ViewController.m"
-            timestampString = "461790924.251174"
+            timestampString = "461957797.683247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "-presentNewGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -242,11 +242,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/AppDelegate.m"
-            timestampString = "461790245.273853"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72">
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -256,11 +258,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/ViewController.m"
-            timestampString = "461791022.164535"
+            timestampString = "461957797.683247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-presentHistory"
             landmarkType = "5">
          </BreakpointContent>
@@ -272,12 +274,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/AppDelegate.m"
-            timestampString = "461791147.411318"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-applicationWillResignActive:"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -304,11 +306,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461957037.612113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "-makeRedoRect"
             landmarkType = "5">
          </BreakpointContent>
@@ -336,11 +338,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -352,11 +354,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461957037.612113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -368,11 +370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -384,11 +386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -400,11 +402,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -416,11 +418,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -432,11 +434,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CapStats/GameViewController.m"
-            timestampString = "461947897.412112"
+            timestampString = "461958983.50723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "-endGame"
             landmarkType = "5">
          </BreakpointContent>

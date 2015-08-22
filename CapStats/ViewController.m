@@ -11,6 +11,7 @@
 #import "GameViewController.h"
 #import "PastGamesTVC.h"
 
+
 @interface ViewController ()
 @property (strong, nonatomic) CapsGame* game;
 //@property (weak, nonatomic) IBOutlet UILabel *missPercentageLabel;
@@ -23,6 +24,7 @@
 @property (strong, nonatomic) UIButton* historyButton;
 
 @end
+
 
 
 @implementation ViewController

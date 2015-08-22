@@ -17,7 +17,7 @@
 @property (nonatomic) float hitPercentage;
 @property (nonatomic) float missPercentage;
 
-@property (nonatomic) NSInteger gameNumber;
+@property (nonatomic) NSDate* date;
 
 +(FinalGameStats*)createFinalGameWithCapsGame:(CapsGame*)game withGameNumber:(NSUInteger)gameNumber;
 

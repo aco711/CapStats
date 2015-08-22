@@ -19,7 +19,8 @@
     finalGameStats.missPercentage = game.missPercentage;
     finalGameStats.glassPercentage = game.glassPercentage;
     finalGameStats.hitPercentage = game.hitPercentage;
-    finalGameStats.gameNumber = gameNumber;
+    finalGameStats.date = [NSDate date];
+
 
     return finalGameStats;
 }

@@ -55,9 +55,8 @@
      
      RLMResults * allGames = [FinalGameStats allObjects];
      FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
-     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu", (unsigned long)objectAtIndexPath.gameNumber];
-     cell.detailTextLabel.text = [NSString stringWithFormat:@"Hit Percentage: %.2f", objectAtIndexPath.hitPercentage];
-     
+     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu", indexPath.row + 1];
+     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", objectAtIndexPath.date];
      
  
  return cell;
@@ -96,8 +95,11 @@
      [realm beginWriteTransaction];
      [realm deleteObject:finalGameStatsToDelete];
      [realm commitWriteTransaction];
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+     
+     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+     
+ }
+ else if (editingStyle == UITableViewCellEditingStyleInsert) {
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
  }
  }
