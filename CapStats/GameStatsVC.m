@@ -99,20 +99,6 @@
     
 }
 
--(void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    // setup a pinch gesture recognizer and make the target the custom transition handler
-    UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self.gestureTarget action:@selector(handlePinch:)];
-    [self.view addGestureRecognizer:pinchRecognizer];
-    
-    // setup an edge pan gesture recognizer and make the target the custom transition handler
-    UIScreenEdgePanGestureRecognizer *edgePanRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self.gestureTarget action:@selector(handleEdgePan:)];
-    edgePanRecognizer.edges = UIRectEdgeLeft;
-    [self.view addGestureRecognizer:edgePanRecognizer];
-}
-
 
 
 /*
