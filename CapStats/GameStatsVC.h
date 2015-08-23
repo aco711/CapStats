@@ -9,13 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Realm/Realm.h>
 #import "FinalGameStats.h"
-#import "LCZoomTransition.h"
 
 @interface GameStatsVC : UIViewController
 
 
 @property (strong, nonatomic) FinalGameStats * finalGameStats;
-
-@property (nonatomic, strong) id<LCZoomTransitionGestureTarget> gestureTarget;
 
 @end

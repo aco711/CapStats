@@ -41,7 +41,7 @@ static const int BUTTON_SIZE = 50;
     
     CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
     UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
-    contentView.backgroundColor = [UIColor blueColor];
+    contentView.backgroundColor = [UIColor whiteColor];
     contentView.alpha = 2.2;
 
     self.view = contentView;

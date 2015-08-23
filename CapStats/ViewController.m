@@ -10,7 +10,6 @@
 #import "CapsGame.h"
 #import "GameViewController.h"
 #import "PastGamesTVC.h"
-#import "LCZoomTransition.h"
 
 
 @interface ViewController ()
@@ -24,8 +23,6 @@
 @property (strong, nonatomic) UIButton* aNewGameButton;
 @property (strong, nonatomic) UIButton* historyButton;
 
-
-
 @end
 
 
@@ -36,7 +33,6 @@
 {
     GameViewController* gameVC = [[GameViewController alloc] init];
     gameVC.title = @"Caps Game";
-   
     [self showViewController:gameVC sender:self];
     // [self performSegueWithIdentifier:@"test" sender:self];
 }

@@ -17,7 +17,6 @@
 		2A4DA2091B81404500B17B56 /* CapStatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA2081B81404500B17B56 /* CapStatsTests.m */; };
 		2A4DA2141B8146ED00B17B56 /* CapsGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA2131B8146ED00B17B56 /* CapsGame.m */; };
 		2A522A891B868C8300B2203B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DA1FB1B81404400B17B56 /* LaunchScreen.xib */; };
-		2A5A3E5A1B8A7047001F7DBF /* LCZoomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A3E591B8A7047001F7DBF /* LCZoomTransition.m */; };
 		2A9861CA1B8528F2002ACFB8 /* GameStatsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9861C91B8528F2002ACFB8 /* GameStatsVC.m */; };
 		2AB9D1181B8678C8003B215E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DA1F61B81404400B17B56 /* Main.storyboard */; };
 		2ABFB3C81B85070800A5DA59 /* PastGamesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFB3C71B85070800A5DA59 /* PastGamesTVC.m */; };
@@ -55,8 +54,6 @@
 		2A4DA2081B81404500B17B56 /* CapStatsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapStatsTests.m; sourceTree = "<group>"; };
 		2A4DA2121B8146ED00B17B56 /* CapsGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapsGame.h; sourceTree = "<group>"; };
 		2A4DA2131B8146ED00B17B56 /* CapsGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapsGame.m; sourceTree = "<group>"; };
-		2A5A3E581B8A7047001F7DBF /* LCZoomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCZoomTransition.h; path = ../../../AnimatedTransitionGallery/submodules/LCZoomTransition/LCZoomTransition/LCZoomTransition.h; sourceTree = "<group>"; };
-		2A5A3E591B8A7047001F7DBF /* LCZoomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCZoomTransition.m; path = ../../../AnimatedTransitionGallery/submodules/LCZoomTransition/LCZoomTransition/LCZoomTransition.m; sourceTree = "<group>"; };
 		2A9861C81B8528F2002ACFB8 /* GameStatsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStatsVC.h; sourceTree = "<group>"; };
 		2A9861C91B8528F2002ACFB8 /* GameStatsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStatsVC.m; sourceTree = "<group>"; };
 		2ABFB3C61B85070800A5DA59 /* PastGamesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastGamesTVC.h; sourceTree = "<group>"; };
@@ -131,8 +128,6 @@
 		2A4DA1EB1B81404400B17B56 /* CapStats */ = {
 			isa = PBXGroup;
 			children = (
-				2A5A3E581B8A7047001F7DBF /* LCZoomTransition.h */,
-				2A5A3E591B8A7047001F7DBF /* LCZoomTransition.m */,
 				2A0C04E21B86143400BC94FC /* View Controllers */,
 				2A4DA1F61B81404400B17B56 /* Main.storyboard */,
 				2A4DA2121B8146ED00B17B56 /* CapsGame.h */,
@@ -332,7 +327,6 @@
 				2ABFB3C81B85070800A5DA59 /* PastGamesTVC.m in Sources */,
 				2A4DA2141B8146ED00B17B56 /* CapsGame.m in Sources */,
 				2A436B311B821676007A0A03 /* GameViewController.m in Sources */,
-				2A5A3E5A1B8A7047001F7DBF /* LCZoomTransition.m in Sources */,
 				2ACC401A1B86CEA00095764E /* FinalGameStats.m in Sources */,
 				2A4DA1EF1B81404400B17B56 /* main.m in Sources */,
 			);
