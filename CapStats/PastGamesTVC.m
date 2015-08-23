@@ -10,6 +10,12 @@
 #import "GameStatsVC.h"
 #import <Realm/Realm.h>
 #import "FinalGameStats.h"
+#import "LCZoomTransition.h"
+
+@interface PastGamesTVC ()
+@property (nonatomic, strong) LCZoomTransition *zoomTransition;
+@end
+
 
 @implementation PastGamesTVC
 
@@ -69,6 +75,12 @@
     FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
     
     gsVC.finalGameStats = objectAtIndexPath;
+    
+    self.zoomTransition = [[LCZoomTransition alloc] initWithNavigationController:self.navigationController];
+    [gsVC setGestureTarget:self.zoomTransition];
+    self.zoomTransition.sourceView = [self.tableView cellForRowAtIndexPath:indexPath];
+
+    
     [self showViewController:gsVC sender:self];
     
     

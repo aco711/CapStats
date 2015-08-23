@@ -12,6 +12,8 @@
 	<dict>
 		<key>018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45</key>
 		<string>https://github.com/aco711/CapStats.git</string>
+		<key>6BCF2F6C9ABAFC39E96AD8C5387A59644BD57E7B</key>
+		<string>https://github.com/mluisbrown/LCZoomTransition</string>
 		<key>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</key>
 		<string>https://github.com/aco711/CapStats.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45</key>
 		<string>..</string>
+		<key>6BCF2F6C9ABAFC39E96AD8C5387A59644BD57E7B</key>
+		<string>../../AnimatedTransitionGallery/submodules/LCZoomTransition</string>
 		<key>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</key>
 		<string>..CapStats</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CapStatsCapStats</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BCF2F6C9ABAFC39E96AD8C5387A59644BD57E7B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LCZoomTransition</string>
 		</dict>
 	</array>
 </dict>
