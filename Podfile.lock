@@ -1,13 +1,16 @@
 PODS:
-  - DateTools (1.6.1)
+  - BFPaperButton (2.0.18):
+    - UIColor+BFPaperColors
   - PureLayout (3.0.0)
+  - UIColor+BFPaperColors (1.7.1)
 
 DEPENDENCIES:
-  - DateTools
+  - BFPaperButton (~> 2.0.18)
   - PureLayout
 
 SPEC CHECKSUMS:
-  DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
+  BFPaperButton: 16b3ec9c2964d24f89f623a4113321d3f003ed60
   PureLayout: 270dfee2236f697ab1d5e2771c2e5c248495fa0d
+  UIColor+BFPaperColors: b1efa4320e2f56c4b14f73232faf967ba0e5b4a2
 
 COCOAPODS: 0.38.2

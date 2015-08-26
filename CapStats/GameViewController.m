@@ -38,10 +38,12 @@
 {
     [super loadView];
     
+    
+    
     CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
     UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
     contentView.backgroundColor = [UIColor whiteColor];
-    contentView.alpha = 2.2;
+    //contentView.alpha = 2.2;
 
     self.view = contentView;
 
@@ -163,6 +165,7 @@
     self.hitPercentage = [[UILabel alloc] init];
     self.hitPercentage.text = [NSString stringWithFormat:@"%.2f", [self.game hitPercentage]];
     [self.hitPercentage sizeToFit];
+    self.hitPercentage.opaque = NO;
     self.hitPercentage.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.hitPercentage];
 }
@@ -171,8 +174,6 @@
 
     self.endGameButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.endGameButton setTitle:@"End Game" forState:UIControlStateNormal];
-    //self.endGameButton.titleLabel.numberOfLines = 1;
-    //[self.endGameButton sizeToFit];
     self.endGameButton.backgroundColor = [UIColor blackColor];
     [self.endGameButton addTarget:self action:@selector(endGame) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.endGameButton];

@@ -71,11 +71,19 @@
 
 -(void)updateViewConstraints
 {
+    
+    CGFloat height = self.navigationController.navigationBar.bounds.size.height;
+
+    
+    if (height == 0)
+    {
+        height = 44;
+    }
+    
     [self.hitPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeLeft];
     [self.hitPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeRight];
     [self.hitPercentageLabel autoAlignAxis:ALAxisVertical toSameAxisOfView:self.view];
-    [self.hitPercentageLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:self.navigationController.navigationBar.bounds.size
-     .height];
+    [self.hitPercentageLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:height];
     
     
     [self.missPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeRight];

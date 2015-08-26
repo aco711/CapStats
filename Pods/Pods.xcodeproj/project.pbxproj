@@ -7,106 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0025B6CD47605FA3B819DC88F18A905F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDEC8E71858D80CB194D17CDDE8F160 /* Foundation.framework */; };
+		0C1CB37613966B323D6CDCC62F192EA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283CA0D399F2A6C6CB7A7CCE8526C15 /* Foundation.framework */; };
 		109DF85995C871E449FDCA2F8A1C247A /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD27F87125E51332CD63F2542C68373 /* ALView+PureLayout.h */; };
 		11C47592B035FA310110873107889415 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC1AD3C73A055F9F42AD89CCD97BC0F /* PureLayout.h */; };
-		27F1F021B62DFBC6553B2825CE13B3C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDEC8E71858D80CB194D17CDDE8F160 /* Foundation.framework */; };
+		202883BE614626310BE8ACB8C0238072 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB36DA5496DA590ADEAB87C2F08BA3 /* Pods-dummy.m */; };
+		27F1F021B62DFBC6553B2825CE13B3C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283CA0D399F2A6C6CB7A7CCE8526C15 /* Foundation.framework */; };
 		2F1F4CE2398B036A0654C4C20074D11B /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E22A9FECDE1DBC069E2E7C5A56291E /* PureLayoutDefines.h */; };
-		358E13E6B8AAC51C7321EEE59633BDA4 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F36D12000D19868185F4B131410FE47 /* DTTimePeriodGroup.h */; };
-		4C40D895250E3E2462DE289CCD410695 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3697E5051395361BC66B750C109D9 /* DateTools-dummy.m */; };
 		4E9DB698A51EA016977AEA144EB13622 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 670A73FA51C22437A0B7AE51D275BEC2 /* NSLayoutConstraint+PureLayout.m */; };
 		57CBCE2164A4E183A2C15072EA1C7BF2 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B5104F2F918278AFA252605BCFF770 /* NSArray+PureLayout.h */; };
-		59DB5000EF4865B74CD76446B2FF3F19 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8CCA2716EAEC1729B49B6B8FCA015 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7A00A3B4858B9DD5A539DD5A10B9998D /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 234F758A62757696F9998699298226CD /* DTTimePeriodChain.h */; };
-		7CABB2D9AC7A6006FBE9DF901663DB35 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB37EF82CDB6729DBC7B0003ACC1B29 /* DateTools.h */; };
-		7E067C9AE25255BC215415488C7BEF52 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C9F0DBA5611A6010B257B9E7F3F30B /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		84434EED546E3D06F64EED1EB03FEC86 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB8D39F830D5797CA8BEF35E16EE1E0 /* Pods-dummy.m */; };
+		6E03EDBD6B2582CF213C0F1472960AC5 /* UIColor+BFPaperColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D95B1810F81CC48789415060DA687CC /* UIColor+BFPaperColors.h */; };
 		84D4A5A1678CDDAB8BBE6AE3E2DABF4F /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E5E3E22D840AF33DFE3D83F9F2615 /* ALView+PureLayout.m */; };
-		8634975C60D76A1DDFC5C79944473979 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4A862EAE49D68994BDBDC3AD57EADA /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8C4C6CFBAE65698427191047047A7CBB /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 16FD5F482243D422D0F21E9CA9D76559 /* DTTimePeriod.h */; };
-		940632530EBA84E24C5316697B879859 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 16875F7C3ABB43A076E355CDAB4AA7C7 /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8847962A8A774E4DF6EE579DBB1E20A8 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E9778394A6C4C280F81EC67FE1B270B6 /* UIColor+BFPaperColors.m */; };
 		9733663AF5C846D98D5C24B82DE945DC /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE33739F4073AC66263D07A93BEA91CA /* PureLayout-dummy.m */; };
-		9F47113E8BCF04D64301CD8F38EB84CC /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D636AC42377092FB0D8E381F3BB3D86E /* DTConstants.h */; };
+		9B1FEF50F5D8AFBEAF87296BACB73F49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283CA0D399F2A6C6CB7A7CCE8526C15 /* Foundation.framework */; };
 		A2C3826D5CC2956DEBB708BC2A214F53 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E38BF37FA677004C0D1927CE318F02 /* NSArray+PureLayout.m */; };
-		C6595D1512C93587F4DBFED03E1A78FA /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 325579EC5E511F55B36B1431A34F67F4 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AFDD0F244F1B2F7FB4B2BD5DEB33CEE3 /* BFPaperButton.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7E5322A9909CA127AFBACC2602BD18 /* BFPaperButton.h */; };
+		B93904F73E889D60247769D793746C7C /* BFPaperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D43CBD05E6552455343EFB016CC49E8C /* BFPaperButton-dummy.m */; };
+		BE7AADE26AC681E19FC8C36C0D306EDB /* UIColor+BFPaperColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D3DB5C367DB9FCB35180A4B4B2389 /* UIColor+BFPaperColors-dummy.m */; };
+		C1F8C67485BBCFD3802EAA168D6414EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283CA0D399F2A6C6CB7A7CCE8526C15 /* Foundation.framework */; };
 		CBE9A9EC5DEAB41F2BFC164643A7220B /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 34546C06562C41728AAF22DCE5A3F940 /* NSLayoutConstraint+PureLayout.h */; };
-		D55681DCA4A63EABB522EF16413A4038 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 00FF03CD16964CFAE024217A17CE22EC /* NSDate+DateTools.h */; };
-		D8F1EA93ECC62FA022F391565FE8D629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDEC8E71858D80CB194D17CDDE8F160 /* Foundation.framework */; };
 		EA62CFA17B0913CAC02370515E2CC48B /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A23EDCEE3DF32D5564D7B4C6E7D12AEF /* PureLayout+Internal.h */; };
-		EE6E3D3DB41D94E0CF3D3FE0920C18B1 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 092A31E0B5DD60D79E38A48DD33407F9 /* DTTimePeriodCollection.h */; };
-		FA69B33452B86561009F31F46EA25E49 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 598191A4DE0FDCC26D2966EC19521A30 /* DTError.h */; };
-		FFFCC0E45972229D00F2FD6D430B548C /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15B14A7A934B12CB37C616713285B6 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FE4D07F1983AB8F730250ECAD591CBD4 /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE234CB78282C49C1A0AFFF538331B3 /* BFPaperButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		10CFA43F1E211E740735EA7B2FB11254 /* PBXContainerItemProxy */ = {
+		259812862BC8B8A1AFE86F575D060A71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 170F6596C146208206131E95D3BAF451;
-			remoteInfo = DateTools;
+			remoteGlobalIDString = F43885B233F4B9CCC43E1736A5087DD7;
+			remoteInfo = "UIColor+BFPaperColors";
 		};
-		6390E279D47ED77D93B6CD7B5778E03D /* PBXContainerItemProxy */ = {
+		5810A37DA919362FB61F03A50C135B36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7CF857C3F7EEFDF0F7822A2733D7FAFD;
 			remoteInfo = PureLayout;
 		};
+		8B068D96B75533CE95C1F2D73A3528C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F43885B233F4B9CCC43E1736A5087DD7;
+			remoteInfo = "UIColor+BFPaperColors";
+		};
+		ED4CDBACE6E590DE45714396F762573D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B6C460117F7B25121B62EC84BF6A18C;
+			remoteInfo = BFPaperButton;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FF03CD16964CFAE024217A17CE22EC /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
-		0411A43877AF71CCDA2C54F158D3E8A5 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
-		092A31E0B5DD60D79E38A48DD33407F9 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
 		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		16875F7C3ABB43A076E355CDAB4AA7C7 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
-		16FD5F482243D422D0F21E9CA9D76559 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
-		234F758A62757696F9998699298226CD /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
 		2B8E5E3E22D840AF33DFE3D83F9F2615 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		2FDEC8E71858D80CB194D17CDDE8F160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		325579EC5E511F55B36B1431A34F67F4 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		32B5104F2F918278AFA252605BCFF770 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
 		34546C06562C41728AAF22DCE5A3F940 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		364B60008D09B566B80CD998A1E8957A /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
-		3E7A66DDA61283A60CFBD3B8621698A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F36D12000D19868185F4B131410FE47 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		35AFFFEF5C7D4E81235F7F40AD34113F /* BFPaperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFPaperButton-prefix.pch"; sourceTree = "<group>"; };
+		4283CA0D399F2A6C6CB7A7CCE8526C15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		439087276ADBC95429682D7E0886DE1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		49C9480115BCD100FF147EF0B10972C2 /* UIColor+BFPaperColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors-prefix.pch"; sourceTree = "<group>"; };
 		4AD27F87125E51332CD63F2542C68373 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		4DA417084ECE70B03FF8683BC9833683 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		525B030C2625B24F438A7D06A08A2120 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
-		598191A4DE0FDCC26D2966EC19521A30 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
-		6175AC2C5AAC6F80364933B39F63F319 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		581D3DB5C367DB9FCB35180A4B4B2389 /* UIColor+BFPaperColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors-dummy.m"; sourceTree = "<group>"; };
+		606A173F8D0C6A32022ACC837AF15CA8 /* libBFPaperButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBFPaperButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		619FB545B23CD447D4875717519A36C8 /* UIColor+BFPaperColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+BFPaperColors.xcconfig"; sourceTree = "<group>"; };
 		62EFBD5C489E6C2E42983DD105D63945 /* libPureLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPureLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		670A73FA51C22437A0B7AE51D275BEC2 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		69D3697E5051395361BC66B750C109D9 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
 		6DC1AD3C73A055F9F42AD89CCD97BC0F /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		77A8CCA2716EAEC1729B49B6B8FCA015 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
-		7CB8D39F830D5797CA8BEF35E16EE1E0 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		7F4F06ADD67113D51DEAE8659E7CD370 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E22A9FECDE1DBC069E2E7C5A56291E /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		99FB454F9BCBE13A3F85251C270DF969 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		9D95B1810F81CC48789415060DA687CC /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BFPaperColors.h"; path = "UIColor+BFPaperColors/UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
 		A153D1F77479ED77712E5172EB1F1492 /* PureLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PureLayout-Private.xcconfig"; sourceTree = "<group>"; };
 		A23EDCEE3DF32D5564D7B4C6E7D12AEF /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		AE33739F4073AC66263D07A93BEA91CA /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
-		B267C8CEAB6D5769269A613BC3CC69AB /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7E5322A9909CA127AFBACC2602BD18 /* BFPaperButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFPaperButton.h; path = Classes/BFPaperButton.h; sourceTree = "<group>"; };
+		B0F755FD98B717977E4405EE95A9721D /* libUIColor+BFPaperColors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIColor+BFPaperColors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC15B14A7A934B12CB37C616713285B6 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		CCB37EF82CDB6729DBC7B0003ACC1B29 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
-		D636AC42377092FB0D8E381F3BB3D86E /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
-		E2C9F0DBA5611A6010B257B9E7F3F30B /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
-		E7BCEA3671D29CA5A01E59D1DB02133E /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		C4DB36DA5496DA590ADEAB87C2F08BA3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		D43CBD05E6552455343EFB016CC49E8C /* BFPaperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BFPaperButton-dummy.m"; sourceTree = "<group>"; };
+		DCE234CB78282C49C1A0AFFF538331B3 /* BFPaperButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFPaperButton.m; path = Classes/BFPaperButton.m; sourceTree = "<group>"; };
+		E0590E815D0DF3012E5EA9F2E65577D8 /* BFPaperButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BFPaperButton-Private.xcconfig"; sourceTree = "<group>"; };
+		E9778394A6C4C280F81EC67FE1B270B6 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BFPaperColors.m"; path = "UIColor+BFPaperColors/UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
 		F3E38BF37FA677004C0D1927CE318F02 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		F94E654CFDD5931B2E3C9374675058C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		FE4A862EAE49D68994BDBDC3AD57EADA /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
-		FEBAC6160C149912480B05E0AE765A7B /* DateTools-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DateTools-Private.xcconfig"; sourceTree = "<group>"; };
+		F630A28069E51A92E7E00DA872EBA95A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		F8E260077279CD633C1A935EC5B2C55E /* BFPaperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BFPaperButton.xcconfig; sourceTree = "<group>"; };
+		FB9567E0EF08C526060B18A54E68843D /* UIColor+BFPaperColors-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+BFPaperColors-Private.xcconfig"; sourceTree = "<group>"; };
+		FE16DB1B56BDAF21826E86EE3210C2DD /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09283774D9A0A980C3B4087F08CBE0A2 /* Frameworks */ = {
+		19B67A09693A18277091F09BB19548AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F1EA93ECC62FA022F391565FE8D629 /* Foundation.framework in Frameworks */,
+				C1F8C67485BBCFD3802EAA168D6414EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7B54D4E8A1B6B1B991E5135DC8E782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1FEF50F5D8AFBEAF87296BACB73F49 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,44 +126,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9D6B3CB4DBBFECCCF7D9CD9C27BD282 /* Frameworks */ = {
+		F1ABCB57BDB0139C164A9ACC5FB43AFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0025B6CD47605FA3B819DC88F18A905F /* Foundation.framework in Frameworks */,
+				0C1CB37613966B323D6CDCC62F192EA5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41613009C287043D64E25F5C4F624BB1 /* Support Files */ = {
+		1DF6E1AEE67CB0F626DBBC20C8D942FE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				525B030C2625B24F438A7D06A08A2120 /* PureLayout.xcconfig */,
-				A153D1F77479ED77712E5172EB1F1492 /* PureLayout-Private.xcconfig */,
-				AE33739F4073AC66263D07A93BEA91CA /* PureLayout-dummy.m */,
-				6175AC2C5AAC6F80364933B39F63F319 /* PureLayout-prefix.pch */,
+				F8E260077279CD633C1A935EC5B2C55E /* BFPaperButton.xcconfig */,
+				E0590E815D0DF3012E5EA9F2E65577D8 /* BFPaperButton-Private.xcconfig */,
+				D43CBD05E6552455343EFB016CC49E8C /* BFPaperButton-dummy.m */,
+				35AFFFEF5C7D4E81235F7F40AD34113F /* BFPaperButton-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
+			path = "../Target Support Files/BFPaperButton";
+			sourceTree = "<group>";
+		};
+		1E473501AD4ACCFDE8B0B63C4EF9F9A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E12FD4526E2D9F4825C5324B9FDFD2 /* BFPaperButton */,
+				BC2F87502DE59790242201FF170CA73C /* PureLayout */,
+				8C66F592CF51BB66AF0C24D7BD7AC4D1 /* UIColor+BFPaperColors */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2FDEC8E71858D80CB194D17CDDE8F160 /* Foundation.framework */,
+				4283CA0D399F2A6C6CB7A7CCE8526C15 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		66604581C657DF0FD4FAFFF18149DBFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FB72438C0005A9A97D2E5FC3DED3FBE9 /* DateTools */,
-				9791964BBB3986F12D51629E56A7F819 /* PureLayout */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -163,10 +172,20 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				66604581C657DF0FD4FAFFF18149DBFB /* Pods */,
+				1E473501AD4ACCFDE8B0B63C4EF9F9A0 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8C66F592CF51BB66AF0C24D7BD7AC4D1 /* UIColor+BFPaperColors */ = {
+			isa = PBXGroup;
+			children = (
+				9D95B1810F81CC48789415060DA687CC /* UIColor+BFPaperColors.h */,
+				E9778394A6C4C280F81EC67FE1B270B6 /* UIColor+BFPaperColors.m */,
+				A8E3FE012E7ADA23CA8318E58A08DE7A /* Support Files */,
+			);
+			path = "UIColor+BFPaperColors";
 			sourceTree = "<group>";
 		};
 		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
@@ -174,16 +193,28 @@
 			children = (
 				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
 				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
-				7CB8D39F830D5797CA8BEF35E16EE1E0 /* Pods-dummy.m */,
+				C4DB36DA5496DA590ADEAB87C2F08BA3 /* Pods-dummy.m */,
 				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
-				F94E654CFDD5931B2E3C9374675058C6 /* Pods.debug.xcconfig */,
-				4DA417084ECE70B03FF8683BC9833683 /* Pods.release.xcconfig */,
+				F630A28069E51A92E7E00DA872EBA95A /* Pods.debug.xcconfig */,
+				439087276ADBC95429682D7E0886DE1A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		9791964BBB3986F12D51629E56A7F819 /* PureLayout */ = {
+		A8E3FE012E7ADA23CA8318E58A08DE7A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				619FB545B23CD447D4875717519A36C8 /* UIColor+BFPaperColors.xcconfig */,
+				FB9567E0EF08C526060B18A54E68843D /* UIColor+BFPaperColors-Private.xcconfig */,
+				581D3DB5C367DB9FCB35180A4B4B2389 /* UIColor+BFPaperColors-dummy.m */,
+				49C9480115BCD100FF147EF0B10972C2 /* UIColor+BFPaperColors-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor+BFPaperColors";
+			sourceTree = "<group>";
+		};
+		BC2F87502DE59790242201FF170CA73C /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
 				4AD27F87125E51332CD63F2542C68373 /* ALView+PureLayout.h */,
@@ -195,29 +226,9 @@
 				6DC1AD3C73A055F9F42AD89CCD97BC0F /* PureLayout.h */,
 				A23EDCEE3DF32D5564D7B4C6E7D12AEF /* PureLayout+Internal.h */,
 				82E22A9FECDE1DBC069E2E7C5A56291E /* PureLayoutDefines.h */,
-				41613009C287043D64E25F5C4F624BB1 /* Support Files */,
+				D2F9273B6596C52DC4C91F76D3999C36 /* Support Files */,
 			);
 			path = PureLayout;
-			sourceTree = "<group>";
-		};
-		A9964153FFC659D18E29C9EF704B7D4A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				364B60008D09B566B80CD998A1E8957A /* DateTools.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		A9FCB1765452074C633697899BACF59B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E7BCEA3671D29CA5A01E59D1DB02133E /* DateTools.xcconfig */,
-				FEBAC6160C149912480B05E0AE765A7B /* DateTools-Private.xcconfig */,
-				69D3697E5051395361BC66B750C109D9 /* DateTools-dummy.m */,
-				0411A43877AF71CCDA2C54F158D3E8A5 /* DateTools-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DateTools";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -228,12 +239,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C8E12FD4526E2D9F4825C5324B9FDFD2 /* BFPaperButton */ = {
+			isa = PBXGroup;
+			children = (
+				AF7E5322A9909CA127AFBACC2602BD18 /* BFPaperButton.h */,
+				DCE234CB78282C49C1A0AFFF538331B3 /* BFPaperButton.m */,
+				1DF6E1AEE67CB0F626DBBC20C8D942FE /* Support Files */,
+			);
+			path = BFPaperButton;
+			sourceTree = "<group>";
+		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B267C8CEAB6D5769269A613BC3CC69AB /* libDateTools.a */,
-				3E7A66DDA61283A60CFBD3B8621698A7 /* libPods.a */,
+				606A173F8D0C6A32022ACC837AF15CA8 /* libBFPaperButton.a */,
+				7F4F06ADD67113D51DEAE8659E7CD370 /* libPods.a */,
 				62EFBD5C489E6C2E42983DD105D63945 /* libPureLayout.a */,
+				B0F755FD98B717977E4405EE95A9721D /* libUIColor+BFPaperColors.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,44 +268,34 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FB72438C0005A9A97D2E5FC3DED3FBE9 /* DateTools */ = {
+		D2F9273B6596C52DC4C91F76D3999C36 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D636AC42377092FB0D8E381F3BB3D86E /* DTConstants.h */,
-				598191A4DE0FDCC26D2966EC19521A30 /* DTError.h */,
-				77A8CCA2716EAEC1729B49B6B8FCA015 /* DTError.m */,
-				16FD5F482243D422D0F21E9CA9D76559 /* DTTimePeriod.h */,
-				FE4A862EAE49D68994BDBDC3AD57EADA /* DTTimePeriod.m */,
-				234F758A62757696F9998699298226CD /* DTTimePeriodChain.h */,
-				E2C9F0DBA5611A6010B257B9E7F3F30B /* DTTimePeriodChain.m */,
-				092A31E0B5DD60D79E38A48DD33407F9 /* DTTimePeriodCollection.h */,
-				325579EC5E511F55B36B1431A34F67F4 /* DTTimePeriodCollection.m */,
-				3F36D12000D19868185F4B131410FE47 /* DTTimePeriodGroup.h */,
-				16875F7C3ABB43A076E355CDAB4AA7C7 /* DTTimePeriodGroup.m */,
-				CCB37EF82CDB6729DBC7B0003ACC1B29 /* DateTools.h */,
-				00FF03CD16964CFAE024217A17CE22EC /* NSDate+DateTools.h */,
-				BC15B14A7A934B12CB37C616713285B6 /* NSDate+DateTools.m */,
-				A9964153FFC659D18E29C9EF704B7D4A /* Resources */,
-				A9FCB1765452074C633697899BACF59B /* Support Files */,
+				FE16DB1B56BDAF21826E86EE3210C2DD /* PureLayout.xcconfig */,
+				A153D1F77479ED77712E5172EB1F1492 /* PureLayout-Private.xcconfig */,
+				AE33739F4073AC66263D07A93BEA91CA /* PureLayout-dummy.m */,
+				99FB454F9BCBE13A3F85251C270DF969 /* PureLayout-prefix.pch */,
 			);
-			path = DateTools;
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		974549C03CFE56F32FDAC1778F3F6B62 /* Headers */ = {
+		18D9D002C39D9AE8CB8D891439ECF873 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F47113E8BCF04D64301CD8F38EB84CC /* DTConstants.h in Headers */,
-				FA69B33452B86561009F31F46EA25E49 /* DTError.h in Headers */,
-				8C4C6CFBAE65698427191047047A7CBB /* DTTimePeriod.h in Headers */,
-				7A00A3B4858B9DD5A539DD5A10B9998D /* DTTimePeriodChain.h in Headers */,
-				EE6E3D3DB41D94E0CF3D3FE0920C18B1 /* DTTimePeriodCollection.h in Headers */,
-				358E13E6B8AAC51C7321EEE59633BDA4 /* DTTimePeriodGroup.h in Headers */,
-				7CABB2D9AC7A6006FBE9DF901663DB35 /* DateTools.h in Headers */,
-				D55681DCA4A63EABB522EF16413A4038 /* NSDate+DateTools.h in Headers */,
+				6E03EDBD6B2582CF213C0F1472960AC5 /* UIColor+BFPaperColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		561E77D508D9555E91099B4FD46AF021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDD0F244F1B2F7FB4B2BD5DEB33CEE3 /* BFPaperButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,21 +315,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		170F6596C146208206131E95D3BAF451 /* DateTools */ = {
+		5B6C460117F7B25121B62EC84BF6A18C /* BFPaperButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FFFBB1B415388D2F2BE916D31C500F4 /* Build configuration list for PBXNativeTarget "DateTools" */;
+			buildConfigurationList = 35C84C0CCAC0BD198408471E3DBE6C87 /* Build configuration list for PBXNativeTarget "BFPaperButton" */;
 			buildPhases = (
-				D41367F2D471B3B7B7442F5755432E32 /* Sources */,
-				09283774D9A0A980C3B4087F08CBE0A2 /* Frameworks */,
-				974549C03CFE56F32FDAC1778F3F6B62 /* Headers */,
+				AC8171E3EA54FBDAFDC30C5BB79270D8 /* Sources */,
+				4D7B54D4E8A1B6B1B991E5135DC8E782 /* Frameworks */,
+				561E77D508D9555E91099B4FD46AF021 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				802B71A4ABC584D50886489AEBD17C59 /* PBXTargetDependency */,
 			);
-			name = DateTools;
-			productName = DateTools;
-			productReference = B267C8CEAB6D5769269A613BC3CC69AB /* libDateTools.a */;
+			name = BFPaperButton;
+			productName = BFPaperButton;
+			productReference = 606A173F8D0C6A32022ACC837AF15CA8 /* libBFPaperButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5D693E62CE9C5D06798181231DA9C5C6 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E1897FBAB10AE841090025840B3895 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				26880BC6E61F08B158E28150C5CF93EB /* Sources */,
+				19B67A09693A18277091F09BB19548AC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				578BA1479ACA0A0C041C5A33EFC8E2B0 /* PBXTargetDependency */,
+				6F8209C182070B5DFB8EE1C3DBACA432 /* PBXTargetDependency */,
+				566722236E6C691A7EC0C1514F6DB330 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 7F4F06ADD67113D51DEAE8659E7CD370 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7CF857C3F7EEFDF0F7822A2733D7FAFD /* PureLayout */ = {
@@ -337,22 +369,21 @@
 			productReference = 62EFBD5C489E6C2E42983DD105D63945 /* libPureLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D781486C136B5CED5ABB36D30E42C05C /* Pods */ = {
+		F43885B233F4B9CCC43E1736A5087DD7 /* UIColor+BFPaperColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88A3D91DA16781E99B3ABE9780EE7F9B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 3AACD109C910A80D931C67677CB9371C /* Build configuration list for PBXNativeTarget "UIColor+BFPaperColors" */;
 			buildPhases = (
-				05BB9D1C3B5C432A2C2C0393EB54B2B3 /* Sources */,
-				E9D6B3CB4DBBFECCCF7D9CD9C27BD282 /* Frameworks */,
+				36553632CDC2C782A1B4ECF63800AD31 /* Sources */,
+				F1ABCB57BDB0139C164A9ACC5FB43AFD /* Frameworks */,
+				18D9D002C39D9AE8CB8D891439ECF873 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68AA5A31D583C313E620363EEFFA9486 /* PBXTargetDependency */,
-				4337125A71196B33A47231D378C2CB24 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 3E7A66DDA61283A60CFBD3B8621698A7 /* libPods.a */;
+			name = "UIColor+BFPaperColors";
+			productName = "UIColor+BFPaperColors";
+			productReference = B0F755FD98B717977E4405EE95A9721D /* libUIColor+BFPaperColors.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -376,19 +407,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				170F6596C146208206131E95D3BAF451 /* DateTools */,
-				D781486C136B5CED5ABB36D30E42C05C /* Pods */,
+				5B6C460117F7B25121B62EC84BF6A18C /* BFPaperButton */,
+				5D693E62CE9C5D06798181231DA9C5C6 /* Pods */,
 				7CF857C3F7EEFDF0F7822A2733D7FAFD /* PureLayout */,
+				F43885B233F4B9CCC43E1736A5087DD7 /* UIColor+BFPaperColors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05BB9D1C3B5C432A2C2C0393EB54B2B3 /* Sources */ = {
+		26880BC6E61F08B158E28150C5CF93EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84434EED546E3D06F64EED1EB03FEC86 /* Pods-dummy.m in Sources */,
+				202883BE614626310BE8ACB8C0238072 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36553632CDC2C782A1B4ECF63800AD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7AADE26AC681E19FC8C36C0D306EDB /* UIColor+BFPaperColors-dummy.m in Sources */,
+				8847962A8A774E4DF6EE579DBB1E20A8 /* UIColor+BFPaperColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,86 +444,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D41367F2D471B3B7B7442F5755432E32 /* Sources */ = {
+		AC8171E3EA54FBDAFDC30C5BB79270D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59DB5000EF4865B74CD76446B2FF3F19 /* DTError.m in Sources */,
-				8634975C60D76A1DDFC5C79944473979 /* DTTimePeriod.m in Sources */,
-				7E067C9AE25255BC215415488C7BEF52 /* DTTimePeriodChain.m in Sources */,
-				C6595D1512C93587F4DBFED03E1A78FA /* DTTimePeriodCollection.m in Sources */,
-				940632530EBA84E24C5316697B879859 /* DTTimePeriodGroup.m in Sources */,
-				4C40D895250E3E2462DE289CCD410695 /* DateTools-dummy.m in Sources */,
-				FFFCC0E45972229D00F2FD6D430B548C /* NSDate+DateTools.m in Sources */,
+				B93904F73E889D60247769D793746C7C /* BFPaperButton-dummy.m in Sources */,
+				FE4D07F1983AB8F730250ECAD591CBD4 /* BFPaperButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4337125A71196B33A47231D378C2CB24 /* PBXTargetDependency */ = {
+		566722236E6C691A7EC0C1514F6DB330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor+BFPaperColors";
+			target = F43885B233F4B9CCC43E1736A5087DD7 /* UIColor+BFPaperColors */;
+			targetProxy = 259812862BC8B8A1AFE86F575D060A71 /* PBXContainerItemProxy */;
+		};
+		578BA1479ACA0A0C041C5A33EFC8E2B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BFPaperButton;
+			target = 5B6C460117F7B25121B62EC84BF6A18C /* BFPaperButton */;
+			targetProxy = ED4CDBACE6E590DE45714396F762573D /* PBXContainerItemProxy */;
+		};
+		6F8209C182070B5DFB8EE1C3DBACA432 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PureLayout;
 			target = 7CF857C3F7EEFDF0F7822A2733D7FAFD /* PureLayout */;
-			targetProxy = 6390E279D47ED77D93B6CD7B5778E03D /* PBXContainerItemProxy */;
+			targetProxy = 5810A37DA919362FB61F03A50C135B36 /* PBXContainerItemProxy */;
 		};
-		68AA5A31D583C313E620363EEFFA9486 /* PBXTargetDependency */ = {
+		802B71A4ABC584D50886489AEBD17C59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DateTools;
-			target = 170F6596C146208206131E95D3BAF451 /* DateTools */;
-			targetProxy = 10CFA43F1E211E740735EA7B2FB11254 /* PBXContainerItemProxy */;
+			name = "UIColor+BFPaperColors";
+			target = F43885B233F4B9CCC43E1736A5087DD7 /* UIColor+BFPaperColors */;
+			targetProxy = 8B068D96B75533CE95C1F2D73A3528C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1B07F21978EA25DADA007A17CD5B094D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DA417084ECE70B03FF8683BC9833683 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		22395B2F4DC40BE7057BAE23E4B957AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F94E654CFDD5931B2E3C9374675058C6 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		350D0EB7C1C6E2B903108349ADD0BEB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEBAC6160C149912480B05E0AE765A7B /* DateTools-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		458D5F866CE886644C2181F57A2688B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A153D1F77479ED77712E5172EB1F1492 /* PureLayout-Private.xcconfig */;
@@ -498,6 +498,38 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		4D2864B635A12EF658104FD44E8C3D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0590E815D0DF3012E5EA9F2E65577D8 /* BFPaperButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4ED8EB5D807DD88670A6A031FB6520F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F630A28069E51A92E7E00DA872EBA95A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		511103F7F15A7E8F83B268EA03462CAB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -549,21 +581,21 @@
 			};
 			name = Debug;
 		};
-		619F7A117A6E637142702D0647B311FE /* Debug */ = {
+		A3DBB0C3413947D562E9EFCC8745F1B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEBAC6160C149912480B05E0AE765A7B /* DateTools-Private.xcconfig */;
+			baseConfigurationReference = FB9567E0EF08C526060B18A54E68843D /* UIColor+BFPaperColors-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -604,6 +636,54 @@
 			};
 			name = Debug;
 		};
+		BF721A3020718EBE3081D68B35ABD1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0590E815D0DF3012E5EA9F2E65577D8 /* BFPaperButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BFECECF9FB4952428898BE4129C80D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9567E0EF08C526060B18A54E68843D /* UIColor+BFPaperColors-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C0F2BB624F02C1925700277C90B21E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439087276ADBC95429682D7E0886DE1A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,20 +696,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FFFBB1B415388D2F2BE916D31C500F4 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+		35C84C0CCAC0BD198408471E3DBE6C87 /* Build configuration list for PBXNativeTarget "BFPaperButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				619F7A117A6E637142702D0647B311FE /* Debug */,
-				350D0EB7C1C6E2B903108349ADD0BEB1 /* Release */,
+				4D2864B635A12EF658104FD44E8C3D81 /* Debug */,
+				BF721A3020718EBE3081D68B35ABD1DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88A3D91DA16781E99B3ABE9780EE7F9B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		3AACD109C910A80D931C67677CB9371C /* Build configuration list for PBXNativeTarget "UIColor+BFPaperColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22395B2F4DC40BE7057BAE23E4B957AF /* Debug */,
-				1B07F21978EA25DADA007A17CD5B094D /* Release */,
+				BFECECF9FB4952428898BE4129C80D38 /* Debug */,
+				A3DBB0C3413947D562E9EFCC8745F1B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59E1897FBAB10AE841090025840B3895 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED8EB5D807DD88670A6A031FB6520F7 /* Debug */,
+				C0F2BB624F02C1925700277C90B21E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
