@@ -1,2 +1,1 @@
-pod 'DateTools'
 pod 'PureLayout'

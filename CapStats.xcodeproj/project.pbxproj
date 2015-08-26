@@ -237,6 +237,7 @@
 				TargetAttributes = {
 					2A4DA1E81B81404400B17B56 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 43S93PVEYH;
 					};
 					2A4DA2011B81404500B17B56 = {
 						CreatedOnToolsVersion = 6.4;
@@ -455,6 +456,8 @@
 			baseConfigurationReference = 577026CB68EB10B1E41448A8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/alexcohen/Downloads/realm-objc-0.94.1/ios/static",
@@ -463,6 +466,7 @@
 				INFOPLIST_FILE = CapStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -471,6 +475,8 @@
 			baseConfigurationReference = 9E55B05514FF271F691E31F3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/alexcohen/Downloads/realm-objc-0.94.1/ios/static",
@@ -479,6 +485,7 @@
 				INFOPLIST_FILE = CapStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

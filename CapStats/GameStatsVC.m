@@ -9,6 +9,7 @@
 #import "GameStatsVC.h"
 #import <Realm/Realm.h>
 #import "FinalGameStats.h"
+#import <PureLayout/PureLayout.h>
 
 @interface GameStatsVC ()
 
@@ -24,78 +25,76 @@
 {
     
     [super loadView];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.hitPercentageLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 70, 100, 100)];
-    self.missPercentageLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 100, 100, 100)];
-    self.glassPercentageLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 130, 100, 100)];
+    if (self.finalGameStats.hitPercentage > .10)
+    {
+        self.view.backgroundColor = [UIColor colorWithRed:0 green:179.0f/255.0f blue:89.0f/255.0f alpha:1];
+    }
+    else
+    {
+        self.view.backgroundColor = [UIColor redColor];
+    }
+    self.hitPercentageLabel = [[UILabel alloc]init];
+    self.missPercentageLabel = [[UILabel alloc]init];
+    self.glassPercentageLabel = [[UILabel alloc]init];
 
     
     self.hitPercentageLabel.text = [NSString stringWithFormat:@"Hit Percentage: %.3f", self.finalGameStats.hitPercentage];
     self.missPercentageLabel.text = [NSString stringWithFormat:@"Miss Percentage: %.3f", self.finalGameStats.missPercentage];
     self.glassPercentageLabel.text = [NSString stringWithFormat:@"Glass Percentage: %.3f", self.finalGameStats.glassPercentage];
-    [self.hitPercentageLabel sizeToFit];
-    [self.missPercentageLabel sizeToFit];
-    [self.glassPercentageLabel sizeToFit];
+    self.hitPercentageLabel.font=[UIFont systemFontOfSize:40];
+    self.missPercentageLabel.font=[UIFont systemFontOfSize:40];
+    self.glassPercentageLabel.font=[UIFont systemFontOfSize:40];
+    self.hitPercentageLabel.adjustsFontSizeToFitWidth = YES;
+    self.missPercentageLabel.adjustsFontSizeToFitWidth = YES;
+    self.glassPercentageLabel.adjustsFontSizeToFitWidth = YES;
+    self.hitPercentageLabel.textAlignment = NSTextAlignmentCenter;
+    self.missPercentageLabel.textAlignment = NSTextAlignmentCenter;
+    self.glassPercentageLabel.textAlignment = NSTextAlignmentCenter;
+
     [self.view addSubview:self.hitPercentageLabel];
     [self.view addSubview:self.missPercentageLabel];
     [self.view addSubview:self.glassPercentageLabel];
-    
-    [self.hitPercentageLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.missPercentageLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.glassPercentageLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-    
-    
-    
-
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitPercentageLabel
-                                                          attribute:NSLayoutAttributeLeftMargin
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeLeftMargin
-                                                         multiplier:1.0
-                                                           constant:0.0]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missPercentageLabel
-                                                          attribute:NSLayoutAttributeLeftMargin
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeLeftMargin
-                                                         multiplier:1.0
-                                                           constant:0.0]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.glassPercentageLabel
-                                                          attribute:NSLayoutAttributeLeftMargin
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeLeftMargin
-                                                         multiplier:1.0
-                                                           constant:0.0]];
-    
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitPercentageLabel
-                                                          attribute:NSLayoutAttributeBottom
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.missPercentageLabel
-                                                          attribute:NSLayoutAttributeTop
-                                                         multiplier:1
-                                                           constant:0]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.missPercentageLabel
-                                                          attribute:NSLayoutAttributeBottom
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.glassPercentageLabel
-                                                          attribute:NSLayoutAttributeTop
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.hitPercentageLabel
-                                                          attribute:NSLayoutAttributeCenterY
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeCenterY
-                                                         multiplier:1.0
-                                                           constant:0.0]];
 
     
     
+    [self updateViewConstraints];
     
+   
+}
+
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self updateViewConstraints];
+    
+}
+
+-(void)updateViewConstraints
+{
+    [self.hitPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeLeft];
+    [self.hitPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeRight];
+    [self.hitPercentageLabel autoAlignAxis:ALAxisVertical toSameAxisOfView:self.view];
+    [self.hitPercentageLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:self.navigationController.navigationBar.bounds.size
+     .height];
+    
+    
+    [self.missPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeRight];
+    [self.missPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeLeft];
+    [self.missPercentageLabel autoAlignAxis:ALAxisVertical toSameAxisOfView:self.view];
+    [self.missPercentageLabel autoConstrainAttribute:ALAttributeTop toAttribute:ALAttributeBottom ofView:self.hitPercentageLabel];
+    
+    [self.glassPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeRight];
+    [self.glassPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeLeft];
+    [self.glassPercentageLabel autoAlignAxis:ALAxisVertical toSameAxisOfView:self.view];
+    [self.glassPercentageLabel autoConstrainAttribute:ALAttributeTop toAttribute:ALAttributeBottom ofView:self.missPercentageLabel];
+    [self.glassPercentageLabel autoPinEdgeToSuperviewMargin:ALEdgeBottom];
+    
+    [@[self.hitPercentageLabel, self.glassPercentageLabel, self.missPercentageLabel] autoMatchViewsDimension:ALDimensionHeight];
+    [@[self.hitPercentageLabel, self.missPercentageLabel, self.glassPercentageLabel] autoMatchViewsDimension:ALDimensionWidth];
+    
+    
+    
+    [super updateViewConstraints];
     
 }
 

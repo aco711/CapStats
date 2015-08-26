@@ -48,6 +48,17 @@
     RLMResults * allGames = [FinalGameStats allObjects];
     return [allGames count];
 }
+-(NSString*)dateToString:(NSDate*)date
+{
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
+    
+    NSInteger day = [components day];
+    NSInteger week = [components month];
+    NSInteger year = [components year];
+    
+    NSString* stringDate = [NSString stringWithFormat:@"%ld/%ld/%ld", (long)week, (long)day, (long)year];
+    return stringDate;
+}
 
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,9 +66,12 @@
      
      RLMResults * allGames = [FinalGameStats allObjects];
      FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
-     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu", indexPath.row + 1];
-     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", objectAtIndexPath.date];
-     
+     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu (Total Hits: %ld)", indexPath.row + 1, objectAtIndexPath.numberOfHits];
+     cell.detailTextLabel.text = [self dateToString:objectAtIndexPath.date];
+     if (objectAtIndexPath.hitPercentage > .10)
+     {
+         cell.backgroundColor = [UIColor colorWithRed:0 green:179.0f/255.0f blue:89.0f/255.0f alpha:1];
+     }
  
  return cell;
  }
@@ -69,7 +83,7 @@
     FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
     
     gsVC.finalGameStats = objectAtIndexPath;
-    [self showViewController:gsVC sender:self];
+    [self.navigationController pushViewController:gsVC animated:YES];
     
     
     
@@ -97,6 +111,8 @@
      [realm commitWriteTransaction];
      
      [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+     
+     [tableView reloadData];
      
  }
  else if (editingStyle == UITableViewCellEditingStyleInsert) {

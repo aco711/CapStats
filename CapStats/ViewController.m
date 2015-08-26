@@ -10,6 +10,7 @@
 #import "CapsGame.h"
 #import "GameViewController.h"
 #import "PastGamesTVC.h"
+#import <PureLayout/PureLayout.h>
 
 
 @interface ViewController ()
@@ -33,15 +34,15 @@
 {
     GameViewController* gameVC = [[GameViewController alloc] init];
     gameVC.title = @"Caps Game";
-    [self showViewController:gameVC sender:self];
-    // [self performSegueWithIdentifier:@"test" sender:self];
-}
+    [self.navigationController pushViewController:gameVC animated:YES];
+    //[self showViewController:gameVC sender:self];
+    }
 
 -(void)presentHistory
 {
   PastGamesTVC *historyTVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Table"];
     historyTVC.title = @"History";
-    [self showViewController:historyTVC sender:self];
+    [self.navigationController pushViewController:historyTVC animated:YES];
 }
 
 -(void)loadView
@@ -69,7 +70,8 @@
     [self.historyButton sizeToFit];
     [self.view addSubview:self.historyButton];
     
-    [self addConstraintsToButtons];
+    [self updateViewConstraints];
+    
 
     
     
@@ -84,7 +86,7 @@
     }
     return _game;
 }
--(void)addConstraintsToButtons
+-(void)updateViewConstraints
 {
     [self.aNewGameButton setTranslatesAutoresizingMaskIntoConstraints: NO];
     [self.historyButton setTranslatesAutoresizingMaskIntoConstraints: NO];
@@ -121,7 +123,18 @@
                                                           attribute:NSLayoutAttributeCenterY
                                                          multiplier:.5
                                                            constant:0.0]];
+    
+    [self.aNewGameButton autoSetDimension:ALDimensionWidth toSize:100];
+    [self.aNewGameButton autoSetDimension:ALDimensionHeight toSize:100];
+    [self.historyButton  autoSetDimension:ALDimensionWidth toSize:100];
+    [self.historyButton autoSetDimension:ALDimensionHeight toSize:100];
+    
+    
+    [super updateViewConstraints];
 }
+
+
+
 
 
 
