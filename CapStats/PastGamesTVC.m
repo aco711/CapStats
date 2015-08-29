@@ -66,7 +66,7 @@
      
      RLMResults * allGames = [FinalGameStats allObjects];
      FinalGameStats* objectAtIndexPath = [allGames objectAtIndex:indexPath.row];
-     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu (Total Hits: %ld)", indexPath.row + 1, objectAtIndexPath.numberOfHits];
+     cell.textLabel.text = [NSString stringWithFormat:@"Game %lu (Total Hits: %ld)", indexPath.row + 1, (long)objectAtIndexPath.numberOfHits];
      cell.detailTextLabel.text = [self dateToString:objectAtIndexPath.date];
      if (objectAtIndexPath.hitPercentage > .10)
      {
