@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45" : 0,
+    "7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8438E3D2-BB7A-427A-A090-0D995FC4658F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45" : "CapStats",
+    "7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5" : "CapStatsCapStats"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CapStats",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CapStats.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aco711\/CapStats.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "018C983CA2389AC2FC2AE59BDAE6CA8CB16C8B45"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aco711\/CapStats.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AA484AC4F62547A3C066BFDC1147C6B7C51BAC5"
+    }
+  ]
+}
